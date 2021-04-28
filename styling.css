@@ -1,0 +1,42 @@
+
+
+.dollarSign {
+  margin-right: 30px; 
+  font-weight: bold;
+}
+
+.welcome {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-right: 20%;
+  padding-left: 20%;
+  min-width: 330px;
+}
+
+.welcome p {
+  font-family: 'Ubuntu Mono', monospace;
+  letter-spacing: 1px;
+  color: rgb(77, 22, 59);
+  font-size: 45px;
+}
+
+.prompt {
+  position: relative;
+  top: -9px;
+  width: 17px;
+  height: 50px;
+  -webkit-animation: typing 12s steps(13, end) infinite,
+      blinking 1s step-end infinite;
+  animation: typing 12s steps(13, end) infinite,
+      blinking 1s step-end infinite;
+}
+
+@-webkit-keyframes blinking {
+  from, to { background-color: transparent; }
+  50% { background-color: rgb(133, 138, 133); }
+}
+
+@keyframes blinking {
+  from, to { background-color: transparent; }
+  50% { background-color: rgb(133, 138, 133); }
+}
