@@ -1,15 +1,16 @@
-
+.container-fluid {
+  padding-right: 20%;
+  padding-left: 20%;
+}
 
 .dollarSign {
-  margin-right: 30px; 
+  margin-right: 40px; 
   font-weight: bold;
 }
 
 .welcome {
   padding-top: 60px;
-  padding-bottom: 60px;
-  padding-right: 20%;
-  padding-left: 20%;
+  padding-bottom: 150px;
   min-width: 330px;
 }
 
@@ -39,4 +40,55 @@
 @keyframes blinking {
   from, to { background-color: transparent; }
   50% { background-color: rgb(133, 138, 133); }
+}
+
+.terminal {
+  width: 90%;
+  max-width: 1000px;
+  box-shadow: 0 50px 100px rgba(50,50,93,.15), 0 15px 35px rgba(50,50,93,.2), 0 5px 15px rgba(0,0,0,.12);
+  margin-bottom: 100px;
+}
+
+.terminalHeader {
+  height: 32px;
+  border-radius: 10px 10px 0 0;
+  background-color: rgb(65, 61, 61);
+}
+
+.circle {
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  margin-left: 15px;
+}
+
+.terminalBody {
+  padding: 10px;
+  background-color: rgb(58, 14, 44);
+}
+
+.terminalText {
+  font-family: 'Ubuntu Mono', monospace;
+  letter-spacing: 1px;
+  color: #f6f9fc;
+  font-size: 17px;
+}
+
+.terminalTextSection {
+  padding-bottom: 12.5px;
+}
+
+.directory {
+  color: limegreen;
+  font-size: 17px;
+}
+
+.terminalPrompt {
+  position: relative;
+  width: 9px;
+  height: 20px;
+  -webkit-animation: typing 12s steps(13, end) infinite,
+      blinking 1s step-end infinite;
+  animation: typing 12s steps(13, end) infinite,
+      blinking 1s step-end infinite;
 }

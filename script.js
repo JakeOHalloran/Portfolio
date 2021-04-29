@@ -38,10 +38,10 @@ function typeIntro() {
 
         letterIndex++;
       }
-		}
+    }
 
-		delay++;
-	}
+    delay++;
+  }
 }
 
 
