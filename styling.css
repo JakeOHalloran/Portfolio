@@ -1,20 +1,42 @@
-.container-fluid {
-  padding-right: 20%;
-  padding-left: 20%;
+#heroSection {
+  margin-bottom: 60px;
 }
 
-.dollarSign {
-  margin-right: 40px; 
-  font-weight: bold;
+#projectsSection {
+  margin-bottom: 60px;
+}
+
+.sectionHeading {
+  font-size: 55px;
+  font-family: 'Ubuntu Mono', monospace;
+  color: rgb(77, 22, 59);
+  text-align: center;
+}
+
+.sectionBorder {
+  width: 100px;
+  height: 10px;
+  border-bottom: 4px solid limegreen;
+  margin-bottom: 50px;
+  margin: 0 auto;
 }
 
 .welcome {
   padding-top: 60px;
-  padding-bottom: 150px;
-  min-width: 330px;
+  padding-bottom: 120px;
+  width: 1130px;
+  margin: 0 auto;
 }
 
-.welcome p {
+.dollarSign {
+  color: rgb(77, 22, 59);
+  margin-right: 30px;
+  font-family: 'Ubuntu Mono', monospace;
+  letter-spacing: 1px;
+  font-size: 45px;
+}
+
+.animationText {
   font-family: 'Ubuntu Mono', monospace;
   letter-spacing: 1px;
   color: rgb(77, 22, 59);
@@ -45,6 +67,7 @@
 .terminal {
   width: 90%;
   max-width: 1000px;
+  min-width: 413px;
   box-shadow: 0 50px 100px rgba(50,50,93,.15), 0 15px 35px rgba(50,50,93,.2), 0 5px 15px rgba(0,0,0,.12);
   margin-bottom: 100px;
 }
@@ -80,15 +103,114 @@
 
 .directory {
   color: limegreen;
-  font-size: 17px;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .terminalPrompt {
-  position: relative;
   width: 9px;
   height: 20px;
   -webkit-animation: typing 12s steps(13, end) infinite,
       blinking 1s step-end infinite;
   animation: typing 12s steps(13, end) infinite,
       blinking 1s step-end infinite;
+}
+
+@media screen and (max-width: 1200px) {
+  .welcome {
+    width: 920px;
+    padding-bottom: 90px;
+  }
+  
+  .dollarSign {
+    margin-right: 25px;
+    font-size: 36px;
+  }
+  
+  .animationText {
+    font-size: 36px;
+  }
+  
+  .prompt {
+    top: -11px;
+    width: 11px;
+    height: 35px;
+  }
+
+  .terminal {
+    margin-bottom: 60px;
+  }
+  
+  .terminalText {
+    font-size: 16px;
+  }
+  
+  .terminalTextSection {
+    padding-bottom: 11px;
+  }
+  
+  .directory {
+    font-size: 15px;
+  }
+
+}
+
+@media screen and (max-width: 940px) {
+  .welcome {
+    width: 750px;
+  }
+  
+  .dollarSign {
+    margin-right: 20px;
+    font-size: 29px;
+    font-weight: bold;
+  }
+  
+  .animationText {
+    font-size: 29px;
+    font-weight: bold;
+  }
+  
+  .prompt {
+    top: -10px;
+    width: 10px;
+    height: 30px;
+  }
+
+  .terminal {
+    width: 96%;
+    margin-bottom: 60px;
+  }
+}
+
+
+@media screen and (max-width: 770px) {
+  .welcome {
+    width: 620px;
+  }
+  
+  .dollarSign {
+    margin-right: 10px;
+    font-size: 24px;
+  }
+  
+  .animationText {
+    font-size: 24px;
+  }
+  
+  .prompt {
+    top: -10px;
+    width: 8px;
+    height: 27px;
+  }
+
+  .terminal {
+    width: 98%;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .welcome {
+    display: none;
+  }
 }

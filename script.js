@@ -1,7 +1,7 @@
 
 // the animation logic for the welcome message
 function typeIntro() {
-	let textToAnimate = document.getElementById('animationText');
+  let textToAnimate = document.getElementsByClassName("animationText")[0];
 	let letterIndex = 0; // represents the index of the current letter to be 'typed'
 	let fixedSentanceChar = 0;
 	let interval = setInterval(frame, 100);
