@@ -17,8 +17,8 @@
   width: 100px;
   height: 10px;
   border-bottom: 4px solid limegreen;
-  margin-bottom: 50px;
   margin: 0 auto;
+  margin-bottom: 50px;
 }
 
 .welcome {
@@ -116,6 +116,43 @@
       blinking 1s step-end infinite;
 }
 
+.tabHeader {
+  width: 300px;
+  margin: 0 auto;
+  background-color: rgb(65, 61, 61);
+}
+
+.tab {
+  width: 80px;
+  padding: 10px;
+  color: grey;
+  font-size: 21px;
+  letter-spacing: 4px;
+  font-weight: bold;
+  font-family: 'Ubuntu Mono', monospace;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+}
+
+.tab:hover {
+  background-color: rgb(58, 14, 44);
+  color: limegreen;
+}
+
+.tabBody {
+  width: 300px;
+  margin: 0 auto;
+  background-color: rgb(58, 14, 44);
+}
+
+.tabContent {
+  color: white;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  padding: 10px;
+}
+
 @media screen and (max-width: 1200px) {
   .welcome {
     width: 920px;
@@ -182,7 +219,6 @@
     margin-bottom: 60px;
   }
 }
-
 
 @media screen and (max-width: 770px) {
   .welcome {
