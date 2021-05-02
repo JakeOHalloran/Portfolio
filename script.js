@@ -1,4 +1,3 @@
-
 // the animation logic for the welcome message
 function typeIntro() {
   let textToAnimate = document.getElementById("commandText");
@@ -43,6 +42,19 @@ function runCommand() {
   document.getElementById("tempPrompt").style.display = "none";
   document.getElementById("commandResult").style.display = "block";
   document.getElementById("idlePrompt").style.display = "block";
+}
+
+// when user wants to view a different tabs content
+function selectTab(project, tab, tabContent) {
+  let projectElement = document.getElementById(project);
+  let tabHeaderElement = projectElement.getElementsByClassName("tabHeader")[0]; // get the element that has the tab names
+  tabHeaderElement.getElementsByClassName("activeTab")[0].classList.remove("activeTab"); // find which one is currently active, make it inactive
+  tab.classList.add("activeTab"); // make the inactive tab active
+
+  let tabBodyElement = projectElement.getElementsByClassName("tabBody")[0]; // get the element that has the tab content
+  tabBodyElement.getElementsByClassName("activeContent")[0].classList.remove("activeContent"); // find which one is currently active, make it inactive
+
+  document.getElementById(tabContent).classList.add("activeContent"); // make desired tab content visable
 }
 
 $(document).ready(function() {

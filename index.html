@@ -101,20 +101,26 @@
             <h1 class="sectionHeading">PROJECTS</h1>
             <div class="sectionBorder"></div>
 
-            <div class="tabHeader">
-              <div class="tab" id="whatTab" onclick="selectTab('whatTab')">WHAT</div>
-              <div class="tab" id="whyTab" onclick="openCity('whyTab')">WHY</div>
-              <div class="tab" id="howTab" onclick="openCity('howTab')">HOW</div>
-            </div>
-            <div class="tabBody">
-              <div class="tabContent" id="whatContent">
-                  London is the capital city of England.
+            <div id="project1">
+              <div class="tabHeader">
+                <div class="tab activeTab" id="whatTab" onclick="selectTab('project1', this, 'whatContent_project1')">
+                  WHAT
+                </div><div class="tab" id="whyTab" onclick="selectTab('project1', this, 'whyContent_project1')">
+                  WHY
+                </div><div class="tab" id="howTab" onclick="selectTab('project1', this, 'howContent_project1')">
+                  HOW
+                </div>
               </div>
-              <div class="tabContent" id="whyContent">
-                  London is the capital city of. London is the capital city of.
-              </div>
-              <div class="tabContent" id="howContent">
-                  London is the city of England. London is the city of England. London is the city of England.
+              <div class="tabBody">
+                <div class="tabContent activeContent" id="whatContent_project1">
+                    London is the capital city of England.
+                </div>
+                <div class="tabContent" id="whyContent_project1">
+                    London is the capital city of. London is the capital city of.
+                </div>
+                <div class="tabContent" id="howContent_project1">
+                    London is the city of England. London is the city of England. London is the city of England.
+                </div>
               </div>
             </div>
           </div>

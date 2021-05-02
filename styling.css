@@ -99,11 +99,6 @@
   text-align: center;
 }
 
-.tab:hover {
-  background-color: rgb(58, 14, 44);
-  color: limegreen;
-}
-
 .tabBody {
   width: 300px;
   margin: 0 auto;
@@ -115,6 +110,16 @@
   font-size: 16px;
   font-family: 'Open Sans', sans-serif;
   padding: 10px;
+  display: none;
+}
+
+.activeTab {
+  background-color: rgb(58, 14, 44);
+  color: limegreen;
+}
+
+.activeContent {
+  display: block;
 }
 
 @media screen and (max-width: 1200px) {
