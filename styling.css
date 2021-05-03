@@ -1,7 +1,3 @@
-#projectsSection {
-  margin-bottom: 60px;
-}
-
 .sectionHeading {
   font-size: 55px;
   font-family: 'Ubuntu Mono', monospace;
@@ -83,6 +79,11 @@
   50% { background-color: rgb(133, 138, 133); }
 }
 
+.project {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
 .tabHeader {
   width: 80%;
   background-color: rgb(65, 61, 61);
@@ -132,6 +133,12 @@
   display: block;
 }
 
+.projectImageSection {
+  margin-left: 20px;
+  margin-right: 20px;
+  position: relative;
+}
+
 .projectTitle {
   width: 80%;
   padding-top: 10px;
@@ -139,9 +146,8 @@
   text-align: center;
   background-color: rgba(58, 14, 44, 0.7);
   color: limegreen;
-	position: relative;
-  transform: translateY(-100%);
-  float: right;
+	position: absolute;
+  right: 0;
   font-size: 25px;
   letter-spacing: 2.5px;
   font-weight: 500;
@@ -153,14 +159,29 @@
   height: auto;
   box-shadow: 0 5px 15px rgba(100, 100, 104, 0.15), 0 15px 35px rgba(100, 100, 104, 0.15), 0 5px 15px rgba(100, 100, 104, 0.15);
   float: right;
+  border: 1px solid rgba(58, 14, 44, 0.7);
+}
+
+.seperator {
+  width: 200px;
+  height: 1px;
+  border-bottom: 3px dashed limegreen;
+  margin: 0 auto;
+  margin-bottom: 60px;
+  margin-top: 60px;
 }
 
 @media screen and (max-width: 1650px) {
   .projectTitle {
     width: 100%;
   }
+
+  .projectTitle_mobile {
+    width: 100%;
+  }
   
   .projectImage {
+    float: none;
     width: 100%;
   }
 
@@ -193,7 +214,7 @@
   .projectTitle {
     padding-top: 7px;
     padding-bottom: 7px;
-    font-size: 18px;
+    font-size: 19px;
     letter-spacing: 2.5px;
   }
 
@@ -213,10 +234,23 @@
 }
 
 @media screen and (max-width: 991px) {
+  .sectionHeading {
+    font-size: 45px;
+  }
+  
+  .sectionBorder {
+    width: 80px;
+    height: 5px;
+    margin-bottom: 60px;
+  }
+
   .projectTitle {
     width: 80%;
     margin: 0 auto;
-    float: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    left: 0;
   }
   
   .projectImage {
@@ -224,6 +258,7 @@
     margin: 0 auto;
     display: block;
     float: none;
+    box-shadow: none;
   }
 
   .tabHeader {
@@ -270,6 +305,10 @@
 
   .projectTitle {
     width: 100%;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    font-size: 19px;
+    letter-spacing: 2px;
   }
   
   .projectImage {
@@ -278,7 +317,6 @@
 
   .tabHeader {
     width: 100%;
-    margin-top: -41px;
   }
   
   .tabBody {
