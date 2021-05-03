@@ -38,7 +38,7 @@
                 <div class="terminalTextSection">
                   <div class="form-inline">
                     <div class="directory">jake@portfolio</div>
-                    <div class="terminalText" style="padding-right: 10px;">:~$</div>
+                    <div class="terminalText" id="terminalDollar">:~$</div>
                     <div class="terminalText">sort aboutJake.txt | uniq –u</div>
                   </div>
                   <div class="terminalText" style="padding-left: 7px;">Full Stack Web Developer from Ireland.</div>
@@ -46,7 +46,7 @@
                 <div class="terminalTextSection">
                   <div class="form-inline">
                     <div class="directory">jake@portfolio</div>
-                    <div class="terminalText" style="padding-right: 10px;">:~$</div>
+                    <div class="terminalText" id="terminalDollar">:~$</div>
                     <div class="terminalText">./education</div>
                   </div>
                   <div class="terminalText" style="padding-left: 7px;">[ "MSc Computing (Advanced Software Development) - Dublin Institute of Technology", "BSc Computing (Games Development) - Limerick Institute of Technology" ]</div>
@@ -54,7 +54,7 @@
                 <div class="terminalTextSection">
                   <div class="form-inline">
                     <div class="directory">jake@portfolio</div>
-                    <div class="terminalText" style="padding-right: 10px;">:~$</div>
+                    <div class="terminalText" id="terminalDollar">:~$</div>
                     <div class="terminalText">cat employmentStatus.txt</div>
                   </div>
                   <div class="terminalText" style="padding-left: 7px;">Self Employed Web Developer Working With Small To Medium Businesses</div>
@@ -62,7 +62,7 @@
                 <div class="terminalTextSection">
                   <div class="form-inline">
                     <div class="directory">jake@portfolio</div>
-                    <div class="terminalText" style="padding-right: 10px;">:~$</div>
+                    <div class="terminalText" id="terminalDollar">:~$</div>
                     <div class="terminalText">./technicalSkills</div>
                   </div>
                   <div class="terminalText" style="padding-left: 7px;">[ "HTML5/CSS3", "JavaScript", "TypeScript", "PHP (7)", "MySQL", "Angular 2 (6/11)", "NodeJS", "Bootstrap (3+)", "Sass", "git" ]</div>
@@ -70,7 +70,7 @@
                 <div class="terminalTextSection">
                   <div class="form-inline">
                     <div class="directory">jake@portfolio</div>
-                    <div class="terminalText" style="padding-right: 10px;">:~$</div>
+                    <div class="terminalText" id="terminalDollar">:~$</div>
                     <div class="terminalText">strings resume | less</div>
                   </div>
                   <div class="terminalText" style="padding-left: 7px;"><a target="_blank" href="./test.txt">resume.pdf</a></div>
@@ -78,7 +78,7 @@
                 <div class="terminalTextSection">
                   <div class="form-inline">
                     <div class="directory">jake@portfolio</div>
-                    <div class="terminalText" style="padding-right: 10px;">:~$</div>
+                    <div class="terminalText" id="terminalDollar">:~$</div>
                     <div class="terminalText" id="commandText"></div>
                     <div class="terminalPrompt" id="tempPrompt"></div>
                   </div>
@@ -99,11 +99,11 @@
         <h1 class="sectionHeading">PROJECTS</h1>
         <div class="sectionBorder"></div>
         <div class="row" id="projectsSection">
-          <div class="col-lg-6 text-center">
+          <div class="col-lg-6 col-md-12">
             <img class="projectImage" src="./images/project1.png">
             <div class="projectTitle">PROJECT ONE</div>
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-6 col-md-12">
             <div id="project1">
               <div class="tabHeader">
                 <div class="tab activeTab" id="aboutTab" onclick="selectTab('project1', this, 'aboutContent_project1')">

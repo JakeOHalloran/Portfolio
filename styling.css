@@ -20,7 +20,6 @@
 .terminal {
   width: 90%;
   max-width: 1000px;
-  min-width: 413px;
   box-shadow: 0 50px 100px rgba(50,50,93,.15), 0 15px 35px rgba(50,50,93,.2), 0 5px 15px rgba(0,0,0,.12);
   margin-top: 100px;
   margin-bottom: 100px;
@@ -59,6 +58,10 @@
   color: limegreen;
   font-size: 16px;
   font-family: 'Open Sans', sans-serif;
+}
+
+#terminalDollar {
+  padding-right: 10px;
 }
 
 .terminalPrompt {
@@ -130,7 +133,7 @@
 }
 
 .projectTitle {
-  width: 70%;
+  width: 80%;
   padding-top: 10px;
   padding-bottom: 10px;
   text-align: center;
@@ -138,7 +141,7 @@
   color: limegreen;
 	position: relative;
   transform: translateY(-100%);
-  margin: 0 auto;
+  float: right;
   font-size: 25px;
   letter-spacing: 2.5px;
   font-weight: 500;
@@ -146,9 +149,28 @@
 }
 
 .projectImage {
-  width: 70%;
+  width: 80%;
   height: auto;
   box-shadow: 0 5px 15px rgba(100, 100, 104, 0.15), 0 15px 35px rgba(100, 100, 104, 0.15), 0 5px 15px rgba(100, 100, 104, 0.15);
+  float: right;
+}
+
+@media screen and (max-width: 1650px) {
+  .projectTitle {
+    width: 100%;
+  }
+  
+  .projectImage {
+    width: 100%;
+  }
+
+  .tabHeader {
+    width: 100%;
+  }
+  
+  .tabBody {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -167,17 +189,111 @@
   .directory {
     font-size: 15px;
   }
+
+  .projectTitle {
+    padding-top: 7px;
+    padding-bottom: 7px;
+    font-size: 18px;
+    letter-spacing: 2.5px;
+  }
+
+  .tab {
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 17px;
+    letter-spacing: 2px;
+  }
+
+  .tabContent {
+    font-size: 15px;
+    padding: 10px;
+  }
 }
 
-@media screen and (max-width: 940px) {
-  .terminal {
-    width: 96%;
-    margin-bottom: 60px;
+@media screen and (max-width: 991px) {
+  .projectTitle {
+    width: 80%;
+    margin: 0 auto;
+    float: none;
+  }
+  
+  .projectImage {
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+    float: none;
+  }
+
+  .tabHeader {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .tabBody {
+    width: 80%;
+    margin: 0 auto;
   }
 }
 
 @media screen and (max-width: 770px) {
   .terminal {
     width: 98%;
+  }
+
+  .projectTitle {
+    width: 98%;
+  }
+  
+  .projectImage {
+    width: 98%;
+  }
+
+  .tabHeader {
+    width: 98%;
+  }
+  
+  .tabBody {
+    width: 98%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .terminal {
+    width: 100%;
+  }
+
+  .terminalBody {
+    padding: 4px;
+  }
+
+  .projectTitle {
+    width: 100%;
+  }
+  
+  .projectImage {
+    width: 100%;
+  }
+
+  .tabHeader {
+    width: 100%;
+    margin-top: -41px;
+  }
+  
+  .tabBody {
+    width: 100%;
+  }
+
+  .terminalText {
+    font-size: 15px;
+  }
+  
+  .directory {
+    font-size: 14px;
+  }
+
+  #terminalDollar {
+    padding-right: 4px;
   }
 }
