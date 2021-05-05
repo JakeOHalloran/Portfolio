@@ -1,3 +1,14 @@
+// bring the user to the desired section gradually
+function slideTo(location) {
+	var element = document.querySelector(location);
+  //element.scrollIntoView({ behavior: 'smooth'});
+  
+  const yOffset = -55; 
+  const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+  window.scrollTo({top: y, behavior: 'smooth'});
+}
+
 // the animation logic for the welcome message
 function typeIntro() {
   let textToAnimate = document.getElementById("commandText");

@@ -22,11 +22,17 @@
   </head>
   <body>
     <header>
-
+      <div class="navMenu">
+        <div class="navLinkWrapper">
+          <a class="nav-link" onclick="slideTo('#terminalSection');">ABOUT</a>
+          <a class="nav-link" onclick="slideTo('#projectsSection');">PROJECTS</a>
+          <a class="nav-link" onclick="slideTo('#about-section');">CONTACT</a>
+        </div>
+      </div>
     </header>
     <main>
       <div class="container-fluid">
-        <div class="row">
+        <div class="row" id="terminalSection">
           <div class="col-lg-12">
             <div class="terminal mx-auto">
               <div class="form-inline terminalHeader">
@@ -96,7 +102,7 @@
             </div>
           </div>
         </div>
-        <h1 class="sectionHeading">PROJECTS</h1>
+        <h1 class="sectionHeading" id="projectsSection">PROJECTS</h1>
         <div class="sectionBorder"></div>
         <div class="row">
           <div class="col-lg-6 col-md-12" style="padding: 0px;">
@@ -162,12 +168,15 @@
               </div>
             </div>
           </div>
-          <div class="seperator"></div>
+        </div>
+        <h1 class="sectionHeading" id="projectsSection">CONTACT</h1>
+        <div class="sectionBorder"></div>
+        <div class="row">
+          <div class="col-lg-12" style="padding: 0px;">
+
+          </div>
         </div>
       </div>
     </main>
-    <footer>
-
-    </footer>
   </body>
 </html>
