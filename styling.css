@@ -189,7 +189,6 @@ header {
 .projectImage {
   width: 80%;
   height: auto;
-  box-shadow: 0 5px 15px rgba(100, 100, 104, 0.15), 0 15px 35px rgba(100, 100, 104, 0.15), 0 5px 15px rgba(100, 100, 104, 0.15);
   float: right;
   border: 1px solid rgba(58, 14, 44, 0.7);
 }
@@ -201,6 +200,27 @@ header {
   margin: 0 auto;
   margin-bottom: 50px;
   margin-top: 50px;
+}
+
+.contact-text {
+  color: black;
+  font-size: 31px;
+  font-family: 'Ubuntu Mono', monospace;
+  margin-bottom: 25px;
+}
+
+.contact-text i {
+  font-size: 30px;
+  margin-right: 20px;
+  color: rgb(58, 14, 44);
+}
+
+.contact-link {
+  text-decoration: none !important;
+}
+
+.contact-info {
+  margin-bottom: 70px;
 }
 
 @media screen and (max-width: 1650px) {
@@ -259,6 +279,20 @@ header {
     font-size: 15px;
     padding: 10px;
   }
+
+  .contact-text {
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+  
+  .contact-text i {
+    font-size: 25px;
+    margin-right: 15px;
+  }
+  
+  .contact-info {
+    margin-bottom: 50px;
+  }
 }
 
 @media screen and (max-width: 991px) {
@@ -301,7 +335,6 @@ header {
     margin: 0 auto;
     display: block;
     float: none;
-    box-shadow: none;
   }
 
   .tabHeader {
@@ -358,6 +391,7 @@ header {
 
   .terminal {
     width: 100%;
+    box-shadow: none;
   }
 
   .terminalBody {
@@ -370,6 +404,8 @@ header {
     padding-bottom: 7px;
     font-size: 19px;
     letter-spacing: 2px;
+    position: relative;
+    background-color: rgba(58, 14, 44, 1);
   }
   
   .projectImage {
@@ -394,5 +430,15 @@ header {
 
   #terminalDollar {
     padding-right: 4px;
+  }
+
+  .contact-text {
+    font-size: 23px;
+    margin-bottom: 18px;
+  }
+  
+  .contact-text i {
+    font-size: 23px;
+    margin-right: 12px;
   }
 }

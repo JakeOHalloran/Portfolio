@@ -1,7 +1,6 @@
 // bring the user to the desired section gradually
 function slideTo(location) {
 	var element = document.querySelector(location);
-  //element.scrollIntoView({ behavior: 'smooth'});
   
   const yOffset = -55; 
   const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
@@ -51,8 +50,8 @@ function typeIntro() {
 // the animation has finished, show the 'results' of the 'command' in the 'terminal'
 function runCommand() {
   document.getElementById("tempPrompt").style.display = "none";
-  document.getElementById("commandResult").style.display = "block";
-  document.getElementById("idlePrompt").style.display = "block";
+  document.getElementById("commandResult").style.visibility = "visible";
+  document.getElementById("idlePrompt").style.visibility = "visible";
 }
 
 // when user wants to view a different tabs content
