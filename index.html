@@ -6,16 +6,17 @@
     <meta name="description" content="A portfolio for the web developer Jake O'Halloran.">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    
-    <script src="https://kit.fontawesome.com/c33db30578.js" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 
+    <script src="https://kit.fontawesome.com/c33db30578.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
     <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" type="text/css" href="./styling.css"/>
     <script src="./script.js"></script>
@@ -23,13 +24,45 @@
   </head>
   <body>
     <header>
-      <div class="navMenu">
-        <div class="navLinkWrapper">
-          <a class="nav-link" onclick="slideTo('#terminalSection');">ABOUT</a>
-          <a class="nav-link" onclick="slideTo('#projectsSection');">PROJECTS</a>
-          <a class="nav-link" onclick="slideTo('#about-section');">CONTACT</a>
+      <nav class="navCol navbar navbar-expand-lg">
+        <div class="brand">
+          <div id="brand-heading" style="display: block">JAKE O'HALLORAN</div>
+          <div id="brand-subheading" style="display: block">FULL STACK WEB DEVELOPER</div>
         </div>
-      </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon">   
+          <i class="fas fa-bars" style="color:white; font-size:28px;"></i>
+        </span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" onclick="slideTo('#terminalSection');">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" onclick="slideTo('#projectsSection');">PROJECTS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" onclick="slideTo('#contactSection');">CONTACT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="github-icon" href="https://github.com/JakeOHalloran" target="_blank"><i class="fab fa-github"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="email-icon" href="mailto:blankemail@gmail.com" target="_blank"><i class="far fa-envelope"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="resume-icon" href="http://jakeohalloran.com/resume.pdf" target="_blank"><i class="far fa-file-alt"></i></a>
+            </li>
+            <li class="nav-item text-center">
+              <a class="nav-link" id="github-icon-collapsed" href="https://github.com/JakeOHalloran" target="_blank"><i class="fab fa-github"></i></a>
+              <a class="nav-link" id="email-icon-collapsed" href="mailto:blankemail@gmail.com" target="_blank"><i class="far fa-envelope"></i></a>
+              <a class="nav-link" id="resume-icon-collapsed" href="http://jakeohalloran.com/resume.pdf" target="_blank"><i class="far fa-file-alt"></i></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
     <main>
       <div class="container-fluid">
@@ -72,7 +105,7 @@
                     <div class="terminalText" id="terminalDollar">:~$</div>
                     <div class="terminalText">./technicalSkills</div>
                   </div>
-                  <div class="terminalText" style="padding-left: 7px;">[ "HTML5/CSS3", "JavaScript", "TypeScript", "PHP (7)", "MySQL", "Angular 2 (6/11)", "NodeJS", "Bootstrap (3+)", "Sass", "git" ]</div>
+                  <div class="terminalText" style="padding-left: 7px;">[ "HTML5/CSS3", "JavaScript", "TypeScript", "PHP (5/7)", "MySQL", "Angular 2 (6/11)", "NodeJS", "Bootstrap (3+)", "Sass", "git" ]</div>
                 </div>
                 <div class="terminalTextSection">
                   <div class="form-inline">
@@ -108,8 +141,8 @@
         <div class="row">
           <div class="col-lg-6 col-md-12" style="padding: 0px;">
             <div class="projectImageSection">
-              <div class="projectTitle">PROJECT ONE</div>
-              <img class="projectImage" src="./images/project1.png">
+              <div class="projectTitle">DS Sports Injury and Performance</div>
+              <img class="projectImage" src="./images/dssports.png">
             </div>
           </div>
           <div class="col-lg-6 col-md-12" style="padding: 0px;">
@@ -125,13 +158,14 @@
               </div>
               <div class="tabBody">
                 <div class="tabContent activeContent" id="aboutContent_project1">
-                    London is the capital city of England. London is the capital city of England. London is the capital city of England. London is the capital city of England. London is the capital city of England. London is the capital city of England. London is the capital city of England. London is the capital city of England. London is the capital city of England. London is the capital city of England.
+                  A website I created for DS Sports Injury And Performance, a business offering injury recovery and personal training services. 
+                  The website is fully responsive and features a functional contact form and Google Maps integration.
                 </div>
                 <div class="tabContent" id="howContent_project1">
-                    London is the capital city of. London is the capital city of.
+                  The website was created using pure HTML5, CSS3 and Javascript. A small bit of PHP was required for the contact form (using PHPMailer).
                 </div>
                 <div class="tabContent" id="linksContent_project1">
-                    London is the city of England. London is the city of England. London is the city of England.
+                  The website can be viewed <a class="link" target="_blank" href="http://dsinjuryandperformance.com/">here.</a>
                 </div>
               </div>
             </div>
@@ -141,8 +175,8 @@
         <div class="row">
           <div class="col-lg-6 col-md-12" style="padding: 0px;">
             <div class="projectImageSection">
-              <div class="projectTitle">PROJECT ONE</div>
-              <img class="projectImage" src="./images/project1.png">
+              <div class="projectTitle">Goodreads Web Scraper</div>
+              <img class="projectImage" src="./images/goodreads.png">
             </div>
           </div>
           <div class="col-lg-6 col-md-12" style="padding: 0px;">
@@ -158,26 +192,170 @@
               </div>
               <div class="tabBody">
                 <div class="tabContent activeContent" id="aboutContent_project2">
-                    London is the capital city of England. London is the capital city of England. London is the capital city of England. London is the capital city of England. London is the capital city of England. London is the capital city of England. London is the capital city of England. London is the capital city of England. London is the capital city of England. London is the capital city of England.
+                  An author I was creating a website for asked if there was a way for the website to pull his books from other sources, so as to not need a CMS.
+                  The website Goodreads stored all his books, but had an API that left a lot to be desired. So I created a web scraper that would pull books from Goodreads.
+                  I created a simple frontend to showcase this web scraper.
                 </div>
                 <div class="tabContent" id="howContent_project2">
-                    London is the capital city of. London is the capital city of.
+                  The web scraper was created with PHP, using simple_html_dom to parse the web pages. The front end was created using Angular 11, Bootstrap and Sass.
                 </div>
                 <div class="tabContent" id="linksContent_project2">
-                    London is the city of England. London is the city of England. London is the city of England.
+                  The web app can be used <a class="link" target="_blank" href="http://jakeohalloran.com/GoodreadsScraper">here.</a>
+                  The source code can be browsed on <a class="link" target="_blank" href="https://github.com/JakeOHalloran/GoodreadsWebScraper">github</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="seperator"></div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 col-md-12" style="padding: 0px;">
+            <div class="projectImageSection">
+              <div class="projectTitle">Off The Beaten Path</div>
+              <img class="projectImage" src="./images/offthebeatenpath.png">
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12" style="padding: 0px;">
+            <div class="project" id="project3">
+              <div class="tabHeader">
+                <div class="tab activeTab" id="aboutTab" onclick="selectTab('project3', this, 'aboutContent_project3')">
+                  ABOUT
+                </div><div class="tab" id="howTab" onclick="selectTab('project3', this, 'howContent_project3')">
+                  TECHNOLOGY
+                </div><div class="tab" id="linksTab" onclick="selectTab('project3', this, 'linksContent_project3')">
+                  LINKS
+                </div>
+              </div>
+              <div class="tabBody">
+                <div class="tabContent activeContent" id="aboutContent_project3">
+                  An old website created for Off The Beaten Path, a bike tour business.  
+                  The website is fully responsive and features a content management system, a full blog and the ability for the owner to create tours dynamically.
+                  Customers can browse available tours and book them for specific days. 
+                </div>
+                <div class="tabContent" id="howContent_project3">
+                  The website was created using the Wordpress website builder 'Oxygen'. The website also makes use of WooCommerce for tour 'products' and payment processing and the plugin
+                  'Bookings and Appointments For WooCommerce' (by PluginHive) to enable the creation and managing of specific tours.
+                </div>
+                <div class="tabContent" id="linksContent_project3">
+                  The website can be viewed <a class="link" target="_blank" href="http://www.jakeohalloran.com/offthebeatenpath/">here.</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="seperator"></div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 col-md-12" style="padding: 0px;">
+            <div class="projectImageSection">
+              <div class="projectTitle">Game Backlog</div>
+              <img class="projectImage" src="./images/gamebacklog.png">
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12" style="padding: 0px;">
+            <div class="project" id="project4">
+              <div class="tabHeader">
+                <div class="tab activeTab" id="aboutTab" onclick="selectTab('project4', this, 'aboutContent_project4')">
+                  ABOUT
+                </div><div class="tab" id="howTab" onclick="selectTab('project4', this, 'howContent_project4')">
+                  TECHNOLOGY
+                </div><div class="tab" id="linksTab" onclick="selectTab('project4', this, 'linksContent_project4')">
+                  LINKS
+                </div>
+              </div>
+              <div class="tabBody">
+                <div class="tabContent activeContent" id="aboutContent_project4">
+                  This app uses the IGDB api to allow for the creation of a video game backlog to track what games you want to play but haven't gotten around to.
+                  Users can log in and edit their backlog (filter by platform, remove games, mark as completed), or add to it by searching games by their title.
+                  The app takes the search string and returns a list of games like it from the IGDBs game database. These results can be added to the users backlog.  
+                </div>
+                <div class="tabContent" id="howContent_project4">
+                  This app was created using Angular 11 with Bootstrap and Sass, and NodeJS with a MySQL database.
+                </div>
+                <div class="tabContent" id="linksContent_project4">
+                  The source code can be browsed on <a class="link" target="_blank" href="https://github.com/JakeOHalloran/GameBacklog">github.</a>
+                  The web app can be used <a class="link" target="_blank" href="https://musing-noyce-7c2d2a.netlify.app">here.</a>
+                  To log in, use the details 'demo@gamebacklog.com' with the password 'demo_password'. 
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="seperator"></div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 col-md-12" style="padding: 0px;">
+            <div class="projectImageSection">
+              <div class="projectTitle">Automated Negotiation System</div>
+              <img class="projectImage" src="./images/negotiationSystem.png">
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12" style="padding: 0px;">
+            <div class="project" id="project5">
+              <div class="tabHeader">
+                <div class="tab activeTab" id="aboutTab" onclick="selectTab('project5', this, 'aboutContent_project5')">
+                  ABOUT
+                </div><div class="tab" id="howTab" onclick="selectTab('project5', this, 'howContent_project5')">
+                  TECHNOLOGY
+                </div><div class="tab" id="linksTab" onclick="selectTab('project5', this, 'linksContent_project5')">
+                  LINKS
+                </div>
+              </div>
+              <div class="tabBody">
+                <div class="tabContent activeContent" id="aboutContent_project5">
+                  For my masters I investigated using automated negotiation systems within an ecommerce store.
+                  Could it be used to enable flexible pricing? Could store owners rely on this system to negotiate with customers on their behalf?
+                  To answer these questions I created my own automated negotiation system. This system uses previous negotiations to learn how to get better prices from customers. 
+                </div>
+                <div class="tabContent" id="howContent_project5">
+                  The negotiation system itself was created using PHP and MySQL. To test it within an ecommerce setting, I created a basic store front using Angular 6 and Bootstrap.
+                </div>
+                <div class="tabContent" id="linksContent_project5">
+                  The source code can be browsed on <a class="link" target="_blank" href="https://github.com/JakeOHalloran/NegotiationSystem">github</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="seperator"></div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 col-md-12" style="padding: 0px;">
+            <div class="projectImageSection">
+              <div class="projectTitle">Portfolio</div>
+              <img class="projectImage" src="./images/portfolio.png">
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12" style="padding: 0px;">
+            <div class="project" id="project6">
+              <div class="tabHeader">
+                <div class="tab activeTab" id="aboutTab" onclick="selectTab('project6', this, 'aboutContent_project6')">
+                  ABOUT
+                </div><div class="tab" id="howTab" onclick="selectTab('project6', this, 'howContent_project6')">
+                  TECHNOLOGY
+                </div><div class="tab" id="linksTab" onclick="selectTab('project6', this, 'linksContent_project6')">
+                  LINKS
+                </div>
+              </div>
+              <div class="tabBody">
+                <div class="tabContent activeContent" id="aboutContent_project6">
+                  I created a simple portfolio to showcase my web projects. 
+                </div>
+                <div class="tabContent" id="howContent_project6">
+                  This website was created with HTML / CSS and Javascript, with Bootstrap for responsiveness.
+                </div>
+                <div class="tabContent" id="linksContent_project6">
+                  The source code can be browsed on <a class="link" target="_blank" href="https://github.com/JakeOHalloran/Portfolio">github</a>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <h1 class="sectionHeading" id="projectsSection">CONTACT</h1>
+        <h1 class="sectionHeading" id="contactSection">CONTACT</h1>
         <div class="sectionBorder"></div>
         <div class="row">
           <div class="col-lg-12" style="padding: 0px;">
             <div class="text-center contact-info">
-              <div class="contact-text"><i class="fa fa-phone fa-lg"></i>(+353) 123 456 7890</div>
-              <a class="contact-link" href="mailto:jake.ohalloran@gmail.ie">
-                <div class="contact-text"><i class="fa fa-envelope fa-lg"></i>jake.ohalloran@gmail.ie</div>
+              <div class="contact-text"><i class="fa fa-phone fa-lg"></i>(+123) 123 456 7890</div>
+              <a class="contact-link" target="_blank" href="mailto:blankemail@gmail.com">
+                <div class="contact-text"><i class="fa fa-envelope fa-lg"></i>blankemail@gmail.com</div>
               </a>
             </div>
           </div>

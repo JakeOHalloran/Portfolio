@@ -1,33 +1,91 @@
-header {
-  position: sticky;
-  top: 0;
-  z-index: 1;
+
+.navCol {
+  background-color: rgb(58, 14, 44);
 }
 
-.navMenu {
-  background-color: rgb(214, 87, 28);
+.brand {
+  display: inline-block
 }
 
-.navLinkWrapper {
-  width: 590px;
-  margin: 0 auto;
+#brand-heading {
+  font-size: 27px;
+  font-family: 'Ubuntu Mono', monospace;
+  letter-spacing: 2px;
+  color: limegreen;
+}
+
+#brand-subheading {
+  padding-left: 2px;
+  margin-top: -10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  word-spacing: 2.5px;
+  color: white;
 }
 
 .nav-link {
   font-family: 'Ubuntu Mono', monospace;
-  font-size: 30px;
+  font-size: 19px;
   color: white !important;
   cursor: pointer;
   transition: color 0.3s ease;
-  display: inline-block;
   letter-spacing: 3px;
-  text-align: center;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-top: 7px;
 }
 
 .nav-link:hover {
-  color: grey !important;
+  color: limegreen !important;
+}
+
+#github-icon {
+  font-size: 28px;
+  margin-left: 100px;
+  margin-top: 2px;
+  color: limegreen !important;
+}
+
+#email-icon {
+  font-size: 28px;
+  margin-left: 20px;
+  margin-top: 2px;
+  color: limegreen !important;
+}
+
+#resume-icon {
+  font-size: 26px;
+  margin-top: 2px;
+  color: limegreen !important;
+}
+
+#email-icon:hover, #github-icon:hover, #resume-icon:hover {
+  color: white !important;
+}
+
+#github-icon-collapsed {
+  font-size: 26px;
+  color: limegreen !important;
+  display: none;
+}
+
+#email-icon-collapsed {
+  font-size: 27px;
+  color: limegreen !important;
+  margin-left: 20px;
+  margin-right: 20px;
+  position: relative;
+  top: 1px;
+  display: none;
+}
+
+#resume-icon-collapsed {
+  font-size: 23px;
+  color: limegreen !important;
+  position: relative;
+  top: -2px;
+  display: none;
 }
 
 .sectionHeading {
@@ -117,7 +175,7 @@ header {
 }
 
 .tabHeader {
-  width: 80%;
+  width: 70%;
   background-color: rgb(65, 61, 61);
 }
 
@@ -143,9 +201,9 @@ header {
 }
 
 .tabBody {
-  width: 80%;
+  width: 70%;
   background-color: rgb(58, 14, 44);
-  min-height: 200px;
+  min-height: 190px;
 }
 
 .tabContent {
@@ -172,25 +230,30 @@ header {
 }
 
 .projectTitle {
-  width: 80%;
+  width: 70%;
   padding-top: 10px;
   padding-bottom: 10px;
   text-align: center;
-  background-color: rgba(58, 14, 44, 0.7);
+  background-color: rgba(58, 14, 44, 0.55);
   color: limegreen;
 	position: absolute;
   right: 0;
   font-size: 25px;
-  letter-spacing: 2.5px;
+  letter-spacing: 2px;
   font-weight: 500;
   font-family: 'Ubuntu Mono', monospace;
 }
 
 .projectImage {
-  width: 80%;
+  width: 70%;
   height: auto;
   float: right;
-  border: 1px solid rgba(58, 14, 44, 0.7);
+  border: 5px solid rgb(58, 14, 44);
+}
+
+.link {
+  text-decoration: underline !important;
+  color: #fff !important;
 }
 
 .seperator {
@@ -225,28 +288,52 @@ header {
 
 @media screen and (max-width: 1650px) {
   .projectTitle {
-    width: 100%;
+    width: 85%;
   }
 
   .projectTitle_mobile {
-    width: 100%;
+    width: 85%;
   }
   
   .projectImage {
-    float: none;
-    width: 100%;
+    width: 85%;
   }
 
   .tabHeader {
-    width: 100%;
+    width: 85%;
   }
   
   .tabBody {
-    width: 100%;
+    width: 85%;
   }
 }
 
 @media screen and (max-width: 1200px) {
+  .nav-link {
+    font-size: 18px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 5px;
+  }
+  
+  #github-icon {
+    font-size: 25px;
+    margin-left: 60px;
+    margin-top: 0px;
+  }
+  
+  #email-icon {
+    font-size: 25px;
+    margin-left: -10px;
+    margin-top: 0px;
+  }
+
+  #resume-icon {
+    font-size: 24px;
+    margin-left: -10px;
+    margin-top: 0px;
+  }
+
   .terminalText {
     font-size: 16px;
   }
@@ -262,8 +349,8 @@ header {
   .projectTitle {
     padding-top: 7px;
     padding-bottom: 7px;
-    font-size: 19px;
-    letter-spacing: 2.5px;
+    font-size: 18px;
+    letter-spacing: 2px;
   }
 
   .tab {
@@ -276,7 +363,7 @@ header {
   }
 
   .tabContent {
-    font-size: 15px;
+    font-size: 14px;
     padding: 10px;
   }
 
@@ -296,6 +383,34 @@ header {
 }
 
 @media screen and (max-width: 991px) {
+  .nav-link {
+    text-align: center;
+  }
+
+  #github-icon {
+    display: none;
+  }
+  
+  #email-icon {
+    display: none;
+  }
+
+  #resume-icon {
+    display: none;
+  }
+
+  #github-icon-collapsed {
+    display: inline-block;
+  }
+  
+  #email-icon-collapsed {
+    display: inline-block;
+  }
+  
+  #resume-icon-collapsed {
+    display: inline-block;
+  }
+
   .navLinkWrapper {
     width: 425px;
   }
@@ -335,16 +450,18 @@ header {
     margin: 0 auto;
     display: block;
     float: none;
+    border-bottom: none;
   }
 
   .tabHeader {
     width: 80%;
     margin: 0 auto;
   }
-  
+
   .tabBody {
     width: 80%;
     margin: 0 auto;
+    min-height: 150px;
   }
 
   .seperator {
@@ -352,6 +469,12 @@ header {
     border-bottom: 3px dashed limegreen;
     margin-bottom: 40px;
     margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .tabBody {
+    min-height: 200px;
   }
 }
 
@@ -378,6 +501,10 @@ header {
 }
 
 @media screen and (max-width: 500px) {
+  .navCol {
+    padding: 1px;
+  }
+
   .navLinkWrapper {
     width: 300px;
   }
@@ -392,6 +519,7 @@ header {
   .terminal {
     width: 100%;
     box-shadow: none;
+    margin-top: 40px;
   }
 
   .terminalBody {
@@ -410,6 +538,8 @@ header {
   
   .projectImage {
     width: 100%;
+    border: 1px solid rgba(58, 14, 44);
+    border-bottom: none;
   }
 
   .tabHeader {
@@ -418,6 +548,10 @@ header {
   
   .tabBody {
     width: 100%;
+  }
+
+  .tabContent {
+    font-size: 13px;
   }
 
   .terminalText {
